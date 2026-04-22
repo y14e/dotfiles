@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    // type-checking
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+    "useUnknownInCatchVariables": true,
+
+    // modules
+    "allowImportingTsExtensions": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "resolveJsonModule": true,
+
+    // emit
+    "noEmit": true,
+
+    // interop-constraints
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // language-and-environment
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "moduleDetection": "force",
+    "target": "ES2024",
+
+    // completeness
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
