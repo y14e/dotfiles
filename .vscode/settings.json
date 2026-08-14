@@ -1,0 +1,33 @@
+{
+  // editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // validate
+  "scss.validate": false,
+  "stylelint.validate": ["scss"],
+
+  // extensions
+  "[astro][javascript][markdown][typescript][scss]": {
+    "editor.formatOnSave": true
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[javascript][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.action.useSortedInterfaceMembers.biome": "explicit",
+      "source.action.useSortedKeys.biome": "explicit",
+      "source.fixAll.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    },
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[markdown]": {
+    "prettier.embeddedLanguageFormatting": "off"
+  },
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": "explicit"
+    }
+  }
+}

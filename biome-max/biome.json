@@ -3,10 +3,12 @@
   "assist": {
     "actions": {
       "source": {
-        "organizeImports": "on"
+        "organizeImports": "on",
+        "useSortedInterfaceMembers": "on",
+        "useSortedKeys": "on"
       }
     },
-    "enabled": true
+    "enabled": false
   },
   "formatter": {
     "enabled": true,
@@ -14,6 +16,9 @@
     "lineWidth": 320
   },
   "javascript": {
+    "assist": {
+      "enabled": true
+    },
     "formatter": {
       "quoteStyle": "single",
       "semicolons": "always",
