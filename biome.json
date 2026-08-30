@@ -3,10 +3,12 @@
   "assist": {
     "actions": {
       "source": {
+        "noDuplicateClasses": "on",
         "organizeImports": "on",
         "useSortedAttributes": "on",
         "useSortedInterfaceMembers": "on",
-        "useSortedKeys": "on"
+        "useSortedKeys": "on",
+        "useSortedPackageJson": "on"
       }
     }
   },
@@ -14,8 +16,11 @@
     "useEditorconfig": true
   },
   "html": {
+    "experimentalFullSupportEnabled": true
+  },
+  "javascript": {
     "formatter": {
-      "enabled": false
+      "quoteStyle": "single"
     }
   },
   "linter": {
@@ -28,9 +33,27 @@
   "overrides": [
     {
       "assist": {
-        "enabled": false
+        "actions": {
+          "source": {
+            "useSortedKeys": "off"
+          }
+        }
       },
-      "includes": ["**/tsconfig.json"]
+      "includes": ["**/package.json", "**/tsconfig.json"]
+    },
+    {
+      "formatter": {
+        "enabled": true
+      },
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          }
+        }
+      }
     }
   ]
 }
