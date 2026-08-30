@@ -24,5 +24,13 @@
         "useBlockStatements": "error"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "assist": {
+        "enabled": false
+      },
+      "includes": ["**/tsconfig.json"]
+    }
+  ]
 }
