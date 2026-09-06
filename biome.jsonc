@@ -1,3 +1,4 @@
+// https://biomejs.dev/reference/configuration/
 {
   "$schema": "https://biomejs.dev/schemas/2.5.11/schema.json",
   "assist": {
@@ -31,6 +32,8 @@
     }
   },
   "overrides": [
+    // - Prevent an infinite loop when using `useSortedKeys` and `useSortedPackageJson` together in `package.json`
+    // - Preserve category-based ordering in `tsconfig.json`
     {
       "assist": {
         "actions": {

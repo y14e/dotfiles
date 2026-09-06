@@ -2,9 +2,6 @@
   "[css][markdown][scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[markdown]": {
-    "prettier.embeddedLanguageFormatting": "off"
-  },
   "css.validate": false,
   "editor.codeActionsOnSave": {
     "source.action.noDuplicateClasses.biome": "explicit",
